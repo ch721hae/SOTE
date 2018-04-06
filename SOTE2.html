@@ -2,9 +2,32 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Übung3b</title>
 </head>
 <body>
 
+
+<script type="text/javascript">
+function manipulation(){
+	var derWert = document.getElementById("textfeld").value;
+	var knoten = document.createElement("h4");
+	var knotenInhalt = document.createTextNode(derWert);
+	knoten.appendChild(knotenInhalt);
+	document.getElementById("austausch").appendChild(knoten);
+	}
+
+	</script>
+	
+	
+	<form>
+	<h1> HEHEHEHE</h1>
+<p>Hallo, gebe hier was ein : <p>
+<input type="text" id="textfeld">
+<input type="button" value="click me" onclick="manipulation()">
+<div id="austausch">Alter Text</div>
+
+
+	
+	</form>
 </body>
 </html>
